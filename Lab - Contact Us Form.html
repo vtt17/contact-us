@@ -5,45 +5,50 @@
 	</head>
 	<body>
 		<form action="fakePage.html" method="POST">
-			<p> 
-				<b> First Name: </b> 
-				<input type="text" name="firstname"/> 
-			</p>
-			<p> 
-				<b> Last Name: </b> 
-				<input type="text" name="lastname"/> 
-			</p>
-			<p> 
-				<b> Email: </b>
-				<input type="text" name="email"/> 
-			</p>
-			<p> 
-				<b> Type of License: </b>
-				<input type="radio" name="license" value="Business" checked/> Business
-				<input type="radio" name="license" value="Personal"/> Personal
-			</p>
-			<p>
-				<b> Reason: </b>
-				<select name="reason">
-					<option value="reason"> Select a Reason </option>
-					<option value="softwareSupport"> Software Support </option>
-					<option value="hardwareSupport"> Hardware Support </option>
-					<option value="informationRequest"> Information Request </option>
-				</select>
-			</p>
-			
-			<p>
-				<b> Additional Information: </b>
-				<textarea name="addtionalInfo"></textarea>
-			</p>
-
-			<p><input type="checkbox" name="termService" value="agree"/> I have read the terms of service </p>
-			<p><input type="submit" value="Send Request"/></p> 
-
-
-
-
-
+		<table>
+			<tr>
+				<td align="right"><b> First Name: </b></td>
+				<td><input type="text" name="firstname"/></td>
+			</tr>
+			<tr>
+				<td align="right"><b> Last Name: </b></td>
+				<td><input type="text" name="lastname"/></td>
+			<tr>
+			<tr>
+				<td align="right"><b> Email: </b></td>
+				<td><input type="text" name="email"/></td>
+			<tr>
+			<tr>
+				<td align="right"><b> Type of License: </b></td>
+				<td>
+					<input type="radio" name="license" value="Business" checked/> Business
+					<input type="radio" name="license" value="Personal"/> Personal
+				</td>
+			<tr>
+			<tr>
+				<td align="right"><b> Reason: </b></td>
+				<td>
+					<select name="reason">
+						<option value="reason"> Select a Reason </option>
+						<option value="softwareSupport"> Software Support </option>
+						<option value="hardwareSupport"> Hardware Support </option>
+						<option value="informationRequest"> Information Request </option>
+					</select>
+				</td>
+			<tr>
+			<tr>
+				<td align="right"><b> Additional Information: </b></td>
+				<td><textarea name="addtionalInfo"></textarea></td>
+			<tr>
+			<tr>
+				<td></td>
+				<td><input type="checkbox" name="termService" value="agree"/> I have read the terms of service</td>
+			<tr>
+			<tr>
+				<td></td>
+				<td align="middle"><input type="submit" value="Send Request"/></td>
+			<tr>
+		</table>
 		</form>
 	</body>
 </html>
